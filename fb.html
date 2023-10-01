@@ -1,0 +1,240 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            overflow: hidden;
+            background-color: whitesmoke;
+            margin: 143px 144px;
+            padding: 10px 10px;
+        }
+
+        h1 {
+            color: dodgerblue;
+
+        }
+
+        .fcon {
+            margin: -284px 576px;
+            border: 1px solid white;
+            padding: 12px 10px;
+            border-radius: 7px;
+            align-items: center;
+            width: 320px;
+            height: 300px;
+            /* position: relative; */
+
+            background-color: white;
+            display: inline-block
+        }
+
+        .input {
+            /* background-color: brown; */
+            /* color: brown; */
+            margin: 3px 1px;
+            padding: 15px 14px;
+            border: 1px solid darkgray;
+            border-radius: 7px;
+            width: 320px;
+            height: 50px;
+
+        }
+
+        /* .con{
+
+        margin: 3px 1px;
+            padding: 15px 14px;
+        border:1px solid darkgray;
+        border-radius: 7px;
+        width:320px;
+        height:50px;
+    } */
+        .btn {
+            background-color: dodgerblue;
+            color: aliceblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: larger;
+            /* text-decoration: ; */
+            margin: 3px 1px;
+            padding: 15px 14px;
+            border: 1px solid darkgray;
+            border-radius: 7px;
+            width: 320px;
+            height: 50px;
+
+        }
+
+        a {
+            color: dodgerblue;
+            text-decoration: none;
+
+        }
+
+        .bt {
+            text-align: center;
+
+        }
+
+        .new {
+            background-color: green;
+            color: aliceblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            /* text-decoration: ; */
+            margin: 3px 71px;
+            padding: 15px 14px;
+            border: 1px solid darkgray;
+            border-radius: 7px;
+            width: 170px;
+            height: 47px;
+        }
+
+        .new:hover {
+            background-color: rgb(4, 85, 4);
+            color: aliceblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            /* text-decoration: ; */
+            margin: 3px 71px;
+            padding: 15px 14px;
+            border: 1px solid darkgray;
+            border-radius: 7px;
+            width: 170px;
+            height: 47px;
+
+        }
+
+        .head {
+            /* border: 2px solid black; */
+
+            display: inline-block;
+            margin: 28px 10px;
+            padding: 10px 10px;
+            width: 480px;
+            height: 200px;
+        }
+
+        .h11 {
+            /* border: 2px solid black; */
+            margin: -18px 10px;
+            padding: 2px 10px;
+            width: 150px;
+            height: 30px;
+
+        }
+
+        .h22 {
+            /* border: 2px solid black; */
+            margin: 10px 10px;
+            padding: 10px 10px;
+            width: 400px;
+            height: 70px;
+
+        }
+
+        .fcon {
+            box-shadow: -3px 10px 20px rgba(0.3, 4, 0, 0.3);
+        }
+
+        #links:hover {
+            text-decoration: underline;
+        }
+
+        .btn:hover {
+            background-color: dodgerblue;
+            color: aliceblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: larger;
+            /* text-decoration: ; */
+            margin: 3px 1px;
+            padding: 15px 14px;
+            border: 1px solid darkgray;
+            border-radius: 7px;
+            width: 320px;
+            height: 50px;
+
+        }
+
+        input[type=email]:focus {
+            /* border:5px solid green; */
+            caret-color: dodgerblue;
+            /* caret-color: red; */
+        }
+
+        input[type=password]:focus {
+            /* border:5px solid green; */
+
+            caret-color: dodgerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="h11">
+
+            <h1><b>facebook</b></h1>
+        </div>
+        <div class="h22">
+
+            <h2>Facebook helps you connect and share <br>with the people in your life.</h2>
+        </div>
+    </div>
+    <div class="cont">
+        <div class="fcon">
+            <form action="none">
+                <div class="con">
+
+                    <input type="email" class="input" id="mail" placeholder="Email or phone number">
+                </div>
+                <div class="con">
+
+                    <input type="password" class="input" id="mail" placeholder="Password">
+                </div>
+                <div class="ass">
+
+                    <input type="button" class="btn input" id="di" value="Log in">
+                </div>
+                <br>
+                <div class="bt">
+                    <a href="#" id="links">Forgotten password?</a>
+                </div>
+                <br>
+                <hr>
+
+                <div>
+
+                    <input type="button" class="new" value="Create new account">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <b>create a page</b> for celebrity, brand or business
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+<script>
+
+
+    let inp = document.getElementById('mail');
+
+    inp.addEventListener("mouseEnter", fun)
+
+    function fun() {
+        inp.style.caretColor = "red";
+
+    };
+        // let a=document.querySelector('body');
+
+        // inp.removeEventListener("click",fun);
+
+</script>
+<!-- </script>
+</html>
